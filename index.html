@@ -1,0 +1,152 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkyBook Flight Reservation</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>✈ SkyBook</h1>
+    <p>Cloud-Based Flight Reservation System</p>
+</header>
+
+<div class="container">
+
+    <div class="search-box">
+
+        <h2>Search Flights</h2>
+
+        <div class="trip-options">
+            <label>
+                <input type="radio" name="trip" checked>
+                One Way
+            </label>
+
+            <label>
+                <input type="radio" name="trip">
+                Round Trip
+            </label>
+        </div>
+
+        <div class="form-grid">
+
+            <div>
+                <label>Flight Type</label>
+                <select id="flightType">
+                    <option>Domestic</option>
+                    <option>International</option>
+                </select>
+            </div>
+
+            <div>
+                <label>From</label>
+                <select id="from">
+                    <option>Chennai</option>
+                    <option>Mumbai</option>
+                    <option>Delhi</option>
+                    <option>Bangalore</option>
+                    <option>Hyderabad</option>
+                </select>
+            </div>
+
+            <div>
+                <label>To</label>
+                <select id="to">
+                    <option>Mumbai</option>
+                    <option>Chennai</option>
+                    <option>Delhi</option>
+                    <option>Bangalore</option>
+                    <option>Hyderabad</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Departure</label>
+                <input type="date" id="departure">
+            </div>
+
+            <div>
+                <label>Return</label>
+                <input type="date" id="returnDate">
+            </div>
+
+            <div>
+                <label>Travelers</label>
+                <select id="travelers">
+                    <option value="1">1 Traveler</option>
+                    <option value="2">2 Travelers</option>
+                    <option value="3">3 Travelers</option>
+                    <option value="4">4 Travelers</option>
+                    <option value="5">5 Travelers</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Class</label>
+                <select id="travelClass">
+                    <option>Economy</option>
+                    <option>Premium Economy</option>
+                    <option>Business</option>
+                    <option>First Class</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Fare Type</label>
+                <select id="fareType">
+                    <option>Regular</option>
+                    <option>Student</option>
+                    <option>Senior Citizen</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button id="searchButton">
+            🔍 Search Flights
+        </button>
+
+    </div>
+
+
+    <!-- AVAILABLE FLIGHTS -->
+
+    <div id="results" class="results">
+
+        <h2>Available Flights</h2>
+
+        <div id="flightList"></div>
+
+    </div>
+
+
+    <!-- BOOKING -->
+
+    <div id="booking" class="booking">
+
+        <h2>✅ Booking Confirmation</h2>
+
+        <div id="bookingDetails"></div>
+
+    </div>
+
+</div>
+
+
+<footer>
+    SkyBook © 2026 | Flight Reservation SaaS
+</footer>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
+```
